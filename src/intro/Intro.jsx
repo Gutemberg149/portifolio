@@ -15,12 +15,8 @@ const Intro = () => {
 
         <div className="container">
           <h1>Desenvolvedor Front-End </h1>
-          <p className="p1">
-            Transformo conceitos de design em experiências interativas na web.
-          </p>
-          <p className="p2">
-            Criando interfaces intuitivas, responsivas e atraentes.
-          </p>
+          <p className="p1">Transformo conceitos de design em experiências interativas na web.</p>
+          <p className="p2">Criando interfaces intuitivas, responsivas e atraentes.</p>
         </div>
       </div>
     </Wrapper>
@@ -33,19 +29,18 @@ const Wrapper = styled.div`
 
   .inner {
     width: 100%;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     z-index: 10;
-    height: auto;
 
     .lineAround {
       border-top-right-radius: 7rem;
       border-top-left-radius: 16rem;
       border-bottom-left-radius: 16rem;
       border-bottom-right-radius: 7rem;
-      background: linear-gradient(#38c8fc, rgba(90, 34, 139), #f8fc05)
-        border-box;
+      background: linear-gradient(#38c8fc, rgba(90, 34, 139), #f8fc05) border-box;
       mask-composite: exclude;
       padding: 0.1rem;
       margin-left: 8rem;
@@ -90,12 +85,7 @@ const Wrapper = styled.div`
       margin-right: 8rem;
       border-top: 2px solid transparent;
       border-bottom: 2px solid transparent;
-      border-image: linear-gradient(
-        0.25turn,
-        #38c8fc,
-        rgba(90, 34, 139),
-        #f8fc05
-      );
+      border-image: linear-gradient(0.25turn, #38c8fc, rgba(90, 34, 139), #f8fc05);
       border-image-slice: 6;
       h1 {
         position: relative;
@@ -134,12 +124,12 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
-
       width: 100%;
       align-items: center;
       z-index: 10;
-      height: 180vh;
+      height: 125vh;
       padding: 2rem;
+      margin-top: 2rem;
       .lineAround {
         margin-left: 0;
 
@@ -189,13 +179,14 @@ const Wrapper = styled.div`
 
   @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
     width: 100vw;
+    margin-bottom: 0;
     .inner {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-around;
       z-index: 10;
-      height: 100vh;
+      height: 40rem;
       padding: 2rem;
 
       .lineAround {
@@ -203,13 +194,12 @@ const Wrapper = styled.div`
         border-top-left-radius: 16rem;
         border-bottom-left-radius: 16rem;
         border-bottom-right-radius: 7rem;
-        background: linear-gradient(#38c8fc, rgba(90, 34, 139), #f8fc05)
-          border-box;
+        background: linear-gradient(#38c8fc, rgba(90, 34, 139), #f8fc05) border-box;
         mask-composite: exclude;
         padding: 0.1rem;
         margin-left: 0rem;
         width: 45%;
-        height: 70vh;
+        height: 80%;
         .dropContainer {
           position: relative;
           display: flex;
@@ -252,12 +242,7 @@ const Wrapper = styled.div`
         margin-right: 0rem;
         border-top: 2px solid transparent;
         border-bottom: 2px solid transparent;
-        border-image: linear-gradient(
-          0.25turn,
-          #38c8fc,
-          rgba(90, 34, 139),
-          #f8fc05
-        );
+        border-image: linear-gradient(0.25turn, #38c8fc, rgba(90, 34, 139), #f8fc05);
         border-image-slice: 6;
 
         h1 {
@@ -309,8 +294,7 @@ const Wrapper = styled.div`
         border-top-left-radius: 16rem;
         border-bottom-left-radius: 16rem;
         border-bottom-right-radius: 7rem;
-        background: linear-gradient(#38c8fc, rgba(90, 34, 139), #f8fc05)
-          border-box;
+        background: linear-gradient(#38c8fc, rgba(90, 34, 139), #f8fc05) border-box;
         mask-composite: exclude;
         padding: 0.1rem;
         margin-left: 0rem;
@@ -358,12 +342,7 @@ const Wrapper = styled.div`
         margin-right: 0rem;
         border-top: 2px solid transparent;
         border-bottom: 2px solid transparent;
-        border-image: linear-gradient(
-          0.25turn,
-          #38c8fc,
-          rgba(90, 34, 139),
-          #f8fc05
-        );
+        border-image: linear-gradient(0.25turn, #38c8fc, rgba(90, 34, 139), #f8fc05);
         border-image-slice: 6;
 
         h1 {

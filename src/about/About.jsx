@@ -95,10 +95,12 @@ const About = () => {
 };
 const Wrapper = styled.div`
   z-index: 98;
-  margin-top: 10rem;
+  margin-top: 12rem;
+
   .aboutContainer {
     width: 100%;
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -159,7 +161,7 @@ const Wrapper = styled.div`
       justify-content: center;
       align-items: center;
       width: 100rem;
-      height: 45rem;
+      height: 50rem;
       margin: 1rem 0 9rem 0;
 
       .containerText {
@@ -168,7 +170,7 @@ const Wrapper = styled.div`
         justify-content: center;
         margin-right: 8rem;
         width: 45rem;
-        height: 37rem;
+        height: 35rem;
         border-radius: 1.5rem;
         color: black;
         padding: 2rem;
@@ -198,7 +200,7 @@ const Wrapper = styled.div`
           margin-bottom: 0.5rem;
           font-weight: 500;
           z-index: 99;
-          font-family: poppins;
+          font-family: "poppins";
         }
         p {
           font-size: 1.5rem;
@@ -479,8 +481,10 @@ const Wrapper = styled.div`
     }
   }
   @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
-    margin-top: 0;
+    margin-top: 0rem;
+
     .aboutContainer {
+      height: 100rem;
       .titleCoantainer {
         width: 30rem;
         height: 7rem;
@@ -504,7 +508,7 @@ const Wrapper = styled.div`
 
         .containerText {
           width: 45%;
-          height: 90%;
+          height: 32rem;
           margin-right: 0;
           padding: 0.5rem;
           margin-bottom: 2rem;

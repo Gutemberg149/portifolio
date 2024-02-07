@@ -139,10 +139,8 @@ const Wrapper = styled.div`
       width: 50rem;
       height: 50rem;
       border-radius: 50%;
-      /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
       background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
       background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-      /* background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%); */
       z-index: 90;
       opacity: 0.4;
     }
@@ -182,10 +180,6 @@ const Wrapper = styled.div`
       margin-top: 5rem;
       padding-bottom: 5rem;
       z-index: 98;
-    }
-
-    .sec3 {
-      /* 0rem */
     }
 
     .SocialMedia {
