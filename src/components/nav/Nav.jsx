@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-const Nav = ({
-  handleSrollintoviewHome,
-  handleSrollintoviewAbout,
-  handleSrollintoviewProjects,
-  handleSrollintoviewContato,
-}) => {
+const Nav = ({ handleSrollintoviewHome, handleSrollintoviewAbout, handleSrollintoviewProjects, handleSrollintoviewContato }) => {
   const [blur, setBlur] = useState(false);
 
   //this snipt is to set the nav blur
@@ -37,6 +32,7 @@ const Nav = ({
 };
 const Wrapper = styled.div`
   z-index: 98;
+
   nav {
     width: 100%;
     display: flex;

@@ -34,7 +34,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: space-around;
     z-index: 10;
-
+    margin-top: 10rem;
     .lineAround {
       border-top-right-radius: 7rem;
       border-top-left-radius: 16rem;
@@ -120,6 +120,7 @@ const Wrapper = styled.div`
     }
   }
   @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    margin-top: 0rem;
     .inner {
       display: flex;
       flex-direction: column;
@@ -179,14 +180,15 @@ const Wrapper = styled.div`
 
   @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
     width: 100vw;
-    margin-bottom: 0;
     .inner {
+      margin-bottom: 0;
+      margin-top: 0rem;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-around;
       z-index: 10;
-      height: 40rem;
+      height: 35rem;
       padding: 2rem;
 
       .lineAround {
@@ -233,7 +235,7 @@ const Wrapper = styled.div`
       .container {
         position: relative;
         width: 45%;
-        height: 70vh;
+        height: 40vh;
         display: flex;
         flex-direction: column;
         align-items: center;
