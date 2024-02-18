@@ -67,8 +67,8 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 99;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
   padding: 0 7rem;
 
   .h1Box {
@@ -78,17 +78,12 @@ const Wrapper = styled.div`
     margin-bottom: 3rem;
     text-align: center;
     border-bottom: 4px solid transparent;
-    border-image: linear-gradient(
-      0.25turn,
-      #f8fc05,
-      rgba(90, 34, 139),
-      rgba(1, 1, 122, 0)
-    );
+    border-image: linear-gradient(0.25turn, #f8fc05, rgba(90, 34, 139), rgba(1, 1, 122, 0));
     border-image-slice: 1;
     width: 100%;
     padding-bottom: 1rem;
     h1 {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       font-family: "poppins";
       font-weight: 300;
       color: #d5d4d4;
@@ -97,12 +92,12 @@ const Wrapper = styled.div`
   .containerProjects {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
     flex-wrap: wrap;
 
     .containerProject {
-      width: 50rem;
-      height: 40rem;
+      width: 35rem;
+      height: 35rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -110,22 +105,15 @@ const Wrapper = styled.div`
       margin-bottom: 6rem;
       z-index: 98;
       border: 2px solid transparent;
-      border-image: linear-gradient(
-        0.25turn,
-        #38c8fc,
-        rgba(90, 34, 139),
-        #f8fc05
-      );
+      border-image: linear-gradient(0.25turn, #38c8fc, rgba(90, 34, 139), #f8fc05);
       border-image-slice: 6;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
       padding: 0.8rem;
 
       .projectDisplay {
         position: relative;
         width: 100%;
-        height: 30rem;
+        height: 28rem;
         transition: 0.4s;
         border-radius: 0.5rem;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -162,17 +150,18 @@ const Wrapper = styled.div`
           top: 50%;
           margin-top: -5rem;
           .webName {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 700;
             margin-bottom: 1rem;
           }
           .icons {
             display: flex;
-            font-size: 4rem;
+            font-size: 3rem;
           }
         }
       }
       .info {
+        padding: 0.5rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -184,22 +173,15 @@ const Wrapper = styled.div`
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         border: 3px solid transparent;
-        border-image: linear-gradient(
-          0.25turn,
-          rgba(137, 196, 244),
-          rgba(90, 34, 139),
-          rgba(1, 1, 122, 1)
-        );
+        border-image: linear-gradient(0.25turn, rgba(137, 196, 244), rgba(90, 34, 139), rgba(1, 1, 122, 1));
         border-image-slice: 6;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         z-index: 97;
 
         .inforDescripition {
           text-align: center;
           width: 95%;
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           font-family: "poppins";
           font-weight: 300;
           color: white;
@@ -218,17 +200,14 @@ const Wrapper = styled.div`
           display: flex;
           text-align: start;
           justify-content: center;
-          /* -webkit-backdrop-filter: blur(5px); */
           border: 0.5px solid rgba(255, 255, 255, 0.3);
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
           transition: 0.4s;
           cursor: pointer;
 
           p {
             color: white;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-family: "poppins";
           }
           &:hover {
@@ -239,13 +218,65 @@ const Wrapper = styled.div`
     }
   }
 
-  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 200px) and (max-device-width: 400px) and (-webkit-min-device-pixel-ratio: 2) {
+    margin-top: 1rem;
+    padding: 0;
+    width: 100vw;
+    padding: 0 0rem;
+    .h1Box {
+      width: 85%;
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    .containerProjects {
+      padding: 0.1rem;
+      .containerProject {
+        width: 99vw;
+        height: 25rem;
+        margin-bottom: 2rem;
+        .projectDisplay {
+          width: 100%;
+          background-size: contain;
+          .infoProject {
+            left: 50%;
+            margin-left: -50%;
+            margin-top: -30%;
+            width: 99%;
+            height: 100%;
+
+            .webName {
+              font-size: 1rem;
+            }
+            .icons {
+              font-size: 2rem;
+            }
+          }
+        }
+        .info {
+          height: 12rem;
+          .inforDescripition {
+            width: 99%;
+            font-size: 0.7rem;
+          }
+          .innerGlass {
+            height: 10%;
+            width: 100%;
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 401px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
     margin-top: -1rem;
     padding: 0;
     .h1Box {
       width: 85%;
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
     .containerProjects {
@@ -331,7 +362,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  @media only screen and (min-device-width: 901px) and (max-device-width: 1500px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -346,12 +377,7 @@ const Wrapper = styled.div`
       align-items: center;
       text-align: center;
       border-bottom: 4px solid transparent;
-      border-image: linear-gradient(
-        0.25turn,
-        #f8fc05,
-        rgba(90, 34, 139),
-        rgba(1, 1, 122, 0)
-      );
+      border-image: linear-gradient(0.25turn, #f8fc05, rgba(90, 34, 139), rgba(1, 1, 122, 0));
       border-image-slice: 1;
       width: 100%;
       margin-left: 3rem;
@@ -381,16 +407,9 @@ const Wrapper = styled.div`
         margin-bottom: 1.5rem;
         z-index: 98;
         border: 2px solid transparent;
-        border-image: linear-gradient(
-          0.25turn,
-          #38c8fc,
-          rgba(90, 34, 139),
-          #f8fc05
-        );
+        border-image: linear-gradient(0.25turn, #38c8fc, rgba(90, 34, 139), #f8fc05);
         border-image-slice: 6;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         padding: 0.8rem;
 
         .projectDisplay {
@@ -455,16 +474,9 @@ const Wrapper = styled.div`
           backdrop-filter: blur(5px);
           -webkit-backdrop-filter: blur(5px);
           border: 3px solid transparent;
-          border-image: linear-gradient(
-            0.25turn,
-            rgba(137, 196, 244),
-            rgba(90, 34, 139),
-            rgba(1, 1, 122, 1)
-          );
+          border-image: linear-gradient(0.25turn, rgba(137, 196, 244), rgba(90, 34, 139), rgba(1, 1, 122, 1));
           border-image-slice: 6;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
           z-index: 97;
           /* ----------------------------------------------------------------------------------------------------- */
 
@@ -496,9 +508,7 @@ const Wrapper = styled.div`
 
             -webkit-backdrop-filter: blur(5px);
             border: 0.5px solid rgba(255, 255, 255, 0.3);
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
             transition: 0.4s;
             cursor: pointer;
 

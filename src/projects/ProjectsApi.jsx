@@ -14,7 +14,7 @@ const projectsApi = [
     tecIcon1: <FaReact />,
     tecIcon2: <SiStyledcomponents />,
     tecIcon3: <IoLogoJavascript />,
-    about: "Copia do e-commerce On Running, da forma que ele estava na data que escrevi os codigos. Desenvolvido com JavaScript, React e Style Components.",
+    about: "Copia do e-commerce On Running, da forma que ele estava na data que escrevi os codigos.  Desenvolvido com JavaScript, React e Style Components.",
     link: "https://on-running-vercel-deploy.vercel.app/",
   },
   {

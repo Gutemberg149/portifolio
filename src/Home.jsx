@@ -169,16 +169,18 @@ const Wrapper = styled.div`
     overflow: hidden;
 
     .sec1 {
-      margin-top: 7rem;
+      margin-top: 6rem;
       width: 100vw;
-      height: auto;
+      height: 38rem;
       z-index: 98;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .sec2 {
       width: 100vw;
       margin-top: 5rem;
-      padding-bottom: 5rem;
       z-index: 98;
     }
 
@@ -189,7 +191,7 @@ const Wrapper = styled.div`
       align-items: center;
       z-index: 98;
       overflow: hidden;
-      height: 30rem;
+      height: 28rem;
 
       span {
         width: 7rem;
@@ -246,8 +248,79 @@ const Wrapper = styled.div`
     }
   }
 
-  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 200px) and (max-device-width: 400px) and (-webkit-min-device-pixel-ratio: 2) {
+    .circleEffect {
+      width: 60rem;
+      height: 60rem;
+      .filledCircle {
+        width: 40rem;
+        height: 40rem;
+      }
+    }
     main {
+      .sec1 {
+        width: 100vw;
+        height: 12rem;
+        z-index: 98;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12rem;
+      }
+      .sec2 {
+        margin-top: 10.5rem;
+      }
+      .SocialMedia {
+        margin-top: -6rem;
+        height: 15rem;
+        span {
+          width: 5rem;
+          font-size: 1.1rem;
+          left: 50%;
+          margin-left: -2.5rem;
+          top: 40%;
+        }
+        .iconsLinksContainer {
+          width: 110vw;
+          height: 15rem;
+          margin-top: 10rem;
+          padding: 0 1rem;
+          .boxIcon {
+            justify-content: center;
+            border-radius: 50%;
+            width: 4rem;
+            height: 2rem;
+            transition: 0.5s;
+            background: transparent;
+            margin: 0.5rem;
+            margin-bottom: 5rem;
+            .iconSocial {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 401px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    .circleEffect {
+      width: 70rem;
+      height: 70rem;
+      .filledCircle {
+        width: 40rem;
+        height: 40rem;
+      }
+    }
+    main {
+      .sec1 {
+        margin-top: 6rem;
+        width: 100vw;
+        height: 42rem;
+        z-index: 98;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .SocialMedia {
         margin-top: -4rem;
         height: 25rem;
@@ -273,6 +346,15 @@ const Wrapper = styled.div`
   }
   @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
     main {
+      .sec1 {
+        margin-top: 3rem;
+        width: 100vw;
+        height: 28rem;
+      }
+      .sec2 {
+        margin-top: 0rem;
+        padding-bottom: 1rem;
+      }
       .SocialMedia {
         margin-top: -4rem;
         height: 25rem;
@@ -296,7 +378,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  @media only screen and (min-device-width: 901px) and (max-device-width: 1500px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 2) {
     width: 100%;
     height: auto;
     background-image: linear-gradient(to bottom, #181b1e, #213878, black);
@@ -326,10 +408,8 @@ const Wrapper = styled.div`
         width: 50rem;
         height: 50rem;
         border-radius: 50%;
-        /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
         background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
         background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-        /* background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%); */
         z-index: 90;
         opacity: 0.4;
       }

@@ -80,19 +80,22 @@ const Wrapper = styled.div`
       background-image: #3f575b83;
     }
   }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 200px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
     nav {
       .container {
         height: 3rem;
         justify-content: center;
 
         ul {
+          justify-content: space-between;
           margin-right: 0.4rem;
+          width: 100vw;
+
           li {
-            margin: 0 0.4rem;
-            font-size: 0.9rem;
+            margin-left: 0rem;
+            margin: 0;
+            font-size: 4vw;
             font-weight: 700;
-            width: 5.5rem;
             height: 1.8rem;
           }
         }
