@@ -108,16 +108,16 @@ const Wrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 40rem;
+      width: 35rem;
       height: 7rem;
       margin-bottom: 2rem;
 
       .titleGlass {
         position: absolute;
-        width: 40rem;
-        height: 8rem;
+        width: 31rem;
+        height: 4.5rem;
         border-radius: 1rem;
-        background: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.08);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.38);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
@@ -144,7 +144,7 @@ const Wrapper = styled.div`
         }
       }
       .Title {
-        font-size: 5.3rem;
+        font-size: 4.3rem;
         letter-spacing: 0.8rem;
         color: #ffffff;
         font-weight: 400;
