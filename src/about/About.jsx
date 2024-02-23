@@ -117,8 +117,8 @@ const Wrapper = styled.div`
         width: 31rem;
         height: 4.5rem;
         border-radius: 1rem;
-        background: rgba(255, 255, 255, 0.08);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.38);
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.267);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         animation: rotate 4s linear infinite;
@@ -340,7 +340,7 @@ const Wrapper = styled.div`
     }
   }
 
-  @media only screen and (min-device-width: 200px) and (max-device-width: 400px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 200px) and (max-device-width: 270px) and (-webkit-min-device-pixel-ratio: 2) {
     margin-top: 0;
     .aboutContainer {
       .titleCoantainer {
@@ -348,11 +348,166 @@ const Wrapper = styled.div`
         height: 4rem;
         margin-bottom: 2rem;
         .titleGlass {
-          width: 100vw;
-          height: 0.5rem;
+          width: 11rem;
+          height: 1rem;
         }
         .Title {
-          font-size: 1rem;
+          font-size: 1.1rem;
+          letter-spacing: 0.6rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+      .profilecontainer {
+        flex-direction: column;
+        width: 100vw;
+        height: 58rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 0rem 0 1rem 0;
+
+        .containerText {
+          width: 98vw;
+          height: 30rem;
+          margin-right: 0;
+          padding: 0.5rem;
+          margin-bottom: 2rem;
+          margin-top: -0.4rem;
+          .introducing {
+            margin-bottom: 1.5rem;
+            height: 2rem;
+            span {
+              font-size: 0.9rem;
+              font-weight: 400;
+              z-index: 99;
+              font-family: "poppins";
+              margin-bottom: 0rem;
+              padding: 0;
+              line-height: 1rem;
+            }
+            p {
+              font-size: 1rem;
+              font-weight: 4500;
+              margin: 0;
+              z-index: 99;
+              font-family: "poppins";
+              line-height: 2rem;
+              margin-bottom: 0rem;
+              margin-top: 0;
+              line-height: 2rem;
+              padding: 0;
+            }
+          }
+
+          h5 {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            z-index: 99;
+            font-family: "poppins";
+          }
+          p {
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            z-index: 99;
+            font-weight: 500;
+            font-family: "poppins";
+            color: black;
+          }
+        }
+        .containerSkills {
+          .outLineColor {
+            width: 96vw;
+            height: 9rem;
+
+            .skillBox {
+              width: 100%;
+              height: 8.5rem;
+
+              .left {
+                span {
+                  font-size: 0.9rem;
+                  font-weight: 700;
+                }
+                p {
+                  margin-top: 0.2rem;
+                  font-size: 0.7rem;
+                  line-height: 1.1rem;
+                  font-weight: 300;
+                }
+              }
+              .icon {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+      .topTexts {
+        padding-left: 0rem;
+        padding: 0.5rem;
+
+        .h4Box {
+          .h4Conhecimento {
+            font-size: 1rem;
+          }
+        }
+        .pConhecimento {
+          font-size: 0.9rem;
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+      .bcgContainer {
+        .boxTechContainer {
+          .clipPathContainer {
+            background-color: #051e4bdd;
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 1rem;
+
+            .techtName {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #063592;
+              position: absolute;
+              font-size: 0.7rem;
+              color: #d8d6d6;
+              top: 0;
+              width: 100%;
+              margin-right: 1.2rem;
+              padding: 0.4rem 0;
+              left: 0;
+            }
+            .spanIcon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 1.7rem;
+              margin-bottom: 0;
+              color: #dedcdc;
+              margin-left: 1rem;
+              margin-top: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 271px) and (max-device-width: 400px) and (-webkit-min-device-pixel-ratio: 2) {
+    margin-top: 0;
+    .aboutContainer {
+      .titleCoantainer {
+        width: 100vw;
+        height: 4rem;
+        margin-bottom: 2rem;
+        .titleGlass {
+          width: 15rem;
+          height: 1.5rem;
+        }
+        .Title {
+          font-size: 1.6rem;
           letter-spacing: 0.6rem;
         }
       }
