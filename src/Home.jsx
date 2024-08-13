@@ -4,7 +4,6 @@ import { LuGithub } from "react-icons/lu";
 import { BiLogoLinkedin, BiLogoInstagram } from "react-icons/bi";
 import About from "./about/About";
 import Projects from "./projects/Projects";
-// import universeTech from "./components/images/home/universeTech.png";
 import Intro from "./intro/Intro";
 import Nav from "./components/nav/Nav";
 import { Link } from "react-router-dom";

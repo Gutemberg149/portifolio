@@ -1,5 +1,6 @@
 import onrunning01 from "../components/images/project/onrunning01.jpeg";
 import daskino from "../components/images/project/daskino.jpeg";
+import techBCG from "../components/images/project/techBCG.png";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { AiOutlineHtml5 } from "react-icons/ai";
@@ -27,16 +28,16 @@ const projectsApi = [
     about: "Criação de um site de cinema, mostrando o caminho da escoha do filme até a pagina final do ingresso. Desenvolvido com Html, CSS e JavaScript",
     link: "https://gutemberg149.github.io/cinema_DasKino/src/index/index.html",
   },
-  // {
-  //   id: 3,
-  //   bcgImg: onrunning01,
-  //   projectName: "On Running",
-  //   tecIcon1: <FaReact />,
-  //   tecIcon2: <SiStyledcomponents />,
-  //   tecIcon3: "",
-  //   about: "Copia do e-commerce On Running, da forma que ele estva na data que escrevi os codigos. Desenvolvido com JaVascript, React e Style Components.",
-  //   link: "",
-  // },
+  {
+    id: 3,
+    bcgImg: techBCG,
+    projectName: "On Running",
+    tecIcon1: <FaReact />,
+    tecIcon2: <SiStyledcomponents />,
+    tecIcon3: "",
+    about: "Projeto de e-commercer usando React, TypeScript, Styled Components.",
+    link: "https://tech-shop-inky.vercel.app",
+  },
   // {
   //   id: 4,
   //   bcgImg: onrunning01,
