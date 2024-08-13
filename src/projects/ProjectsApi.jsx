@@ -48,26 +48,6 @@ const projectsApi = [
   //   about: "Copia do e-commerce On Running, da forma que ele estva na data que escrevi os codigos. Desenvolvido com JaVascript, React e Style Components.",
   //   link: "",
   // },
-  // {
-  //   id: 5,
-  //   bcgImg: onrunning01,
-  //   projectName: "On Running",
-  //   tecIcon1: <FaReact />,
-  //   tecIcon2: <SiStyledcomponents />,
-  //   tecIcon3: "",
-  //   about: "Copia do e-commerce On Running, da forma que ele estva na data que escrevi os codigos. Desenvolvido com JaVascript, React e Style Components.",
-  //   link: "",
-  // },
-  // {
-  //   id: 6,
-  //   bcgImg: onrunning01,
-  //   projectName: "On Running",
-  //   tecIcon1: <FaReact />,
-  //   tecIcon2: <SiStyledcomponents />,
-  //   tecIcon3: "",
-  //   about: "Copia do e-commerce On Running, da forma que ele estva na data que escrevi os codigos. Desenvolvido com JaVascript, React e Style Components.",
-  //   link: "",
-  // },
 ];
 
 export default projectsApi;
